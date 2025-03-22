@@ -2,118 +2,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>List72 – Sell Your Home in 72 Hours</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #1E1E1E;
-            color: #F5F5F5;
-        }
-        header, section {
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        .cta-button {
-            background-color: #00E6D0;
-            color: #1E1E1E;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            margin: 1rem 0.5rem;
-            cursor: pointer;
-        }
-        .secondary-button {
-            background-color: #4666FF;
-            color: white;
-        }
-        .section-title {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-        .section-content {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        .benefits, .faq, .testimonials {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: center;
-        }
-        .benefit, .faq-item, .testimonial {
-            max-width: 300px;
-            background-color: #2A2A2A;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #00E6D0;
-            color: #1E1E1E;
-            padding: 2rem 1rem;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>List72 – Sell Your Home in 72 Hours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8e2fc3f.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1E1E1E;
+      color: #F5F5F5;
+    }
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: url('https://source.unsplash.com/featured/?modern,home') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .cta-button {
+      background-color: #00E6D0;
+      color: #1E1E1E;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      margin: 0.5rem;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .cta-button:hover {
+      background-color: #00c7b2;
+      transform: scale(1.05);
+    }
+    .secondary-button {
+      background-color: #4666FF;
+      color: white;
+    }
+    section {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .card {
+      background-color: #2A2A2A;
+      padding: 1rem;
+      border-radius: 10px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .card i {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #00E6D0;
+    }
+    footer {
+      background-color: #00E6D0;
+      color: #1E1E1E;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Sell Your Home in 72 Hours</h1>
-    <p>List your home, connect with verified pros, and go live — all in 3 days.</p>
-    <button class="cta-button">Start My Listing</button>
-    <button class="cta-button secondary-button">How It Works</button>
+<header data-aos="fade-down">
+  <h1>Sell Your Home in 72 Hours</h1>
+  <p>List your home, connect with verified pros, and go live — all in 3 days.</p>
+  <button class="cta-button">Start My Listing</button>
+  <button class="cta-button secondary-button">How It Works</button>
 </header>
 
-<section>
-    <div class="section-title">How It Works</div>
-    <div class="section-content">
-        Step 1: Enter your address<br>
-        Step 2: Upload or book photos<br>
-        Step 3: Choose services<br>
-        Step 4: Launch your listing
-    </div>
+<section data-aos="fade-up">
+  <div class="section-title">How It Works</div>
+  <div class="grid">
+    <div class="card"><i class="fas fa-map-marker-alt"></i> Enter Your Address</div>
+    <div class="card"><i class="fas fa-camera"></i> Upload or Book Photos</div>
+    <div class="card"><i class="fas fa-tools"></i> Choose Support Services</div>
+    <div class="card"><i class="fas fa-rocket"></i> Launch Your Listing</div>
+  </div>
 </section>
 
-<section>
-    <div class="section-title">Why Sellers Choose List72</div>
-    <div class="benefits">
-        <div class="benefit">No 2% Commission</div>
-        <div class="benefit">Verified Local Services</div>
-        <div class="benefit">Full Control of Your Sale</div>
-        <div class="benefit">Real-Time Buyer Tracker</div>
-    </div>
+<section data-aos="fade-up">
+  <div class="section-title">Why Sellers Choose List72</div>
+  <div class="grid">
+    <div class="card"><i class="fas fa-percent"></i> No 2% Commission</div>
+    <div class="card"><i class="fas fa-check-circle"></i> Verified Local Services</div>
+    <div class="card"><i class="fas fa-user-shield"></i> Full Control of Your Sale</div>
+    <div class="card"><i class="fas fa-chart-line"></i> Real-Time Buyer Tracker</div>
+  </div>
 </section>
 
-<section>
-    <div class="section-title">Trusted Suppliers</div>
-    <p class="section-content">Photography • Styling • Cleaning • Legal • Garden Prep</p>
+<section data-aos="fade-up">
+  <div class="section-title">Trusted Suppliers</div>
+  <p>Photography • Styling • Cleaning • Legal • Garden Prep</p>
 </section>
 
-<section>
-    <div class="section-title">FAQs</div>
-    <div class="faq">
-        <div class="faq-item">How is this better than using an agent?</div>
-        <div class="faq-item">What if I need help negotiating?</div>
-        <div class="faq-item">Can I use this with REA or Domain?</div>
-    </div>
+<section data-aos="fade-up">
+  <div class="section-title">FAQs</div>
+  <div class="grid">
+    <div class="card">How is this better than using an agent?</div>
+    <div class="card">What if I need help negotiating?</div>
+    <div class="card">Can I use this with REA or Domain?</div>
+  </div>
 </section>
 
-<section>
-    <div class="section-title">Success Stories</div>
-    <div class="testimonials">
-        <div class="testimonial">“Saved $29,800 on agent fees and sold in 4 days.” – Anna, Sydney</div>
-    </div>
+<section data-aos="fade-up">
+  <div class="section-title">Success Stories</div>
+  <div class="card testimonial">“Saved $29,800 on agent fees and sold in 4 days.” – Anna, Sydney</div>
 </section>
 
-<footer>
-    Ready to keep more of your sale?<br>
-    <button class="cta-button">Start Your 72-Hour Journey</button>
+<footer data-aos="zoom-in">
+  Ready to keep more of your sale?<br><br>
+  <button class="cta-button">Start Your 72-Hour Journey</button>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
 </body>
 </html>
